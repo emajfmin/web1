@@ -1,11 +1,36 @@
 <!doctype html>
 <html>
 <head>
-  <title>EFm - Guitar</title>
+  <title>EFm - Home</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="color.js"></script>
 </head>
 
 <body>
-  <h1>Guitar</h1>
+  <h1><a href="index.html">EFm</a></h1>
+  <div id="grid">
+    <div>
+    <h3>My Favorite</h3>
+      <ul>
+        <script>
+            Links.favList();
+        </script>
+      </ul>
+      <h3>Hobby</h3>
+      <ul>
+        <script>
+          Links.hobbyList();
+        </script>
+      </ul>
+    </div>
+
+    <div id="subject">
+      <h2>Guitar</h2>
+    </div>
+  </div>
+  <input id="Night_Day" type="button" value="Night" onclick="
+    nightDayHandler(this);
+  ">
 </body>
 </html>

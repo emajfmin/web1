@@ -1,0 +1,57 @@
+
+  #grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  #subject{
+    padding: 20px;
+  }
+  #grid ul{
+    border-right:1px solid black;
+    width:120px;
+    margin:0;
+    list-style-type: none;
+  }
+  #Night_Day{
+    position:absolute; left:60px; bottom:10px;
+  }
+
+    a {
+      color:inherit;
+      text-decoration: none;
+    }
+    h1 {
+      font-size:50px;
+      text-align: center;
+      border-bottom:1px solid black;
+      margin:0;
+      padding:20px;
+    }
+
+    h3{
+      border-right:1px solid black;
+      width:160px;
+      margin:0;
+    }
+    body{
+      margin:0;
+    }
+    @media(max-width:720px){
+      #grid{
+        display: block;
+      }
+
+      h3{
+        border-right:none; solid black;
+        width:160px;
+        margin:0;
+        display: block;
+      }
+      h1 {
+        font-size:35px;
+        text-align: center;
+        border-bottom:none; solid black;
+        margin:0;
+        padding:10px;
+      }
+    }

@@ -3,24 +3,39 @@
 <head>
   <title>EFm - Home</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="color.js"></script>
 </head>
 
-<body>
-  <h1><a href="index.html">EFm</a></h1>
-  <img src="main.jpg" width="450">
-  <h3>My Favorite</h3>
-  <p style="margin-top:40px;">
-    <ul>
-      <li><a href="animation.html" title="Animation">Animation</a></li>
-      <li><a href="drawing.html" title="Drawing">Drawing</a></li>
-      <li><a href="painting.html" title="Painting">Painting</a></li>
-    </ul>
-    <p style="margin-top:40px;">
-    <h3>Hobby<h3>
-    <ul>
-      <li><a href="photo.html" title="Photo">Photo</a></li>
-      <li><a href="guitar.html" title="Guitar">Guitar</a></li>
-      <li><a href="game.html" title="Game">Game</a></li>
-    </ul>
-</body>
+  <body>
+    <h1><a href="index.html">EFm</a></h1>
+    <div id="grid">
+      <div>
+      <h3>My Favorite</h3>
+      <ul>
+        <script>
+        Links.favList();
+          // <!-- <li><a href="animation.html" title="Animation">Animation</a></li>
+          // <li><a href="drawing.html" title="Drawing">Drawing</a></li>
+          // <li><a href="painting.html" title="Painting">Painting</a></li> -->
+        </script>
+      </ul>
+      <h3>Hobby</h3>
+        <ul>
+          <script>
+            Links.hobbyList();            
+          </script>
+        </ul>
+      </div>
+
+        <div id="subject">
+          <p><img src="main.jpg" width="450"></p>
+        </div>
+    </div>
+
+      <input id="Night_Day" type="button" value="Night" onclick="
+        nightDayHandler(this);
+      ">
+
+  </body>
 </html>
